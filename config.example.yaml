@@ -1,0 +1,49 @@
+## AI Job Agent Configuration
+
+# Your profile preferences
+preferences:
+  roles:
+    - "Data Scientist"
+    - "Machine Learning Engineer"
+    - "AI Engineer"
+  locations:
+    - "Bangalore"
+    - "Mumbai"
+    - "Remote"
+  experience_years: 5
+  min_salary: 1500000  # INR per annum
+  job_type: "full-time"  # full-time, part-time, contract, internship
+
+# Portal credentials
+portals:
+  linkedin:
+    enabled: true
+    email: ""
+    password: ""
+  naukri:
+    enabled: true
+    email: ""
+    password: ""
+  iimjobs:
+    enabled: true
+    email: ""
+    password: ""
+
+# Matching settings
+matching:
+  min_score: 0.45         # Minimum match score (0-1) to show a job
+  top_k: 20               # Max number of jobs to present for review
+  skill_weight: 0.4       # Weight for skill match
+  experience_weight: 0.3  # Weight for experience match
+  title_weight: 0.3       # Weight for title/role match
+
+# Application settings
+application:
+  cover_letter_template: "templates/cover_letter.txt"
+  auto_apply: false       # If true, skip review and apply directly
+  daily_apply_limit: 25   # Max applications per day
+
+# Storage
+storage:
+  db_path: "data/jobs.json"
+  resumes_dir: "data/resumes/"

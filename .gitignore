@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Config with secrets
+config.yaml
+
+# Data
+data/jobs.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Selenium
+*.log
+chromedriver
+geckodriver
